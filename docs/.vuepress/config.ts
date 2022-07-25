@@ -15,7 +15,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
+      title: "UNIQUE's blog",
       description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
     }
   },
@@ -94,6 +94,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '友情链接', link: '/friends/' },
         ],
       },
+      {
+        text: '日常',
+        link: '/everyday/',
+        items: [
+          { text: 'node', link: '/pages/070101/' },
+          { text: 'mysql', link: '/pages/07030101/' },
+          { text: 'system', link: '/pages/07050101/' },
+          { text: 'elasticsearch', link: '/pages/070801/' },
+          { text: '部署', link: '/pages/070901/' },
+          { text: '我的', link: '/pages/071201/' },
+        ],
+      },
       { text: '关于', link: '/about/' },
       {
         text: '收藏',
@@ -169,9 +181,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      avatar: 'https://avatars.githubusercontent.com/u/27495794?s=400&u=469f5bee1be480fe32d6914b7c5240693767ae05&v=4',
+      name: 'UNIQUE',
+      slogan: '下雪了 一片 一片 一片......',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -181,12 +193,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:ceshi20160607@sina.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/unique',
         },
         {
           iconClass: 'icon-erji',
@@ -198,16 +210,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 页脚信息
     footer: {
-      createYear: 2019, // 博客创建年份
+      createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
+        'UNIQUE', // 博客版权信息，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'xugaoyi',
-        link: 'https://github.com/xugaoyi'
+        name: 'UNIQUE',
+        link: 'https://github.com/unique'
       }
     },
 
@@ -222,7 +234,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: '博客,个人技术博客,前端,开发,框架,后端,前端面试题,技术文档,学习,面试,Java,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
